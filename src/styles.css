@@ -1,0 +1,24 @@
+body {
+    background: #F5F5F5;
+    font-family: sans-serif;
+}
+
+.btn-blue {
+    cursor: pointer;
+    background: #D8E8FB;
+    padding: 5px 30px;
+    border: 1px solid #7E8CAA;
+}
+
+.btn-red {
+    cursor: pointer;
+    background: #F7CDCF;
+    padding: 5px 30px;
+    border: 1px solid #946365;
+}
+
+.modal-dialog {
+    width: 500px;
+    border: 1px solid black;
+    background-color: white;
+}

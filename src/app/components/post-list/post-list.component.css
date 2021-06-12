@@ -1,0 +1,49 @@
+.title-wrapper {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper {
+    margin-right: 15vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.posts {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.post > h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 200px;
+    border: 1px solid black;;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.btn-go-to {
+    width: 100%;
+}
