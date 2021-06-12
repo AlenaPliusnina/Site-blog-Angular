@@ -3,10 +3,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 <p align="center">
-  <img src="screenshots/Post_list.png" width="800"/>
-  <img src="screenshots/New_post.png" width="500"/>
-  <img src="screenshots/Edit_post.png" width="500"/>
-  <img src="screenshots/Del_post.png" width="400"/>
+  <img src="screenshots/Post_list.png" width="600"/>
+  <img src="screenshots/New_post.png" width="600"/>
+  <img src="screenshots/Edit_post.png" width="600"/>
+  <img src="screenshots/Del_post.png" width="600"/>
 </p>
 
 # Описание проекта
