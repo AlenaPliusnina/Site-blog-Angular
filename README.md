@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 <p align="center">
-  <img src="screenshots/Спсиок записей.png" width="600"/>
+  <img src="screenshots/Спсиок%20записей.png" width="600"/>
 </p>
 
 # Описание проекта
