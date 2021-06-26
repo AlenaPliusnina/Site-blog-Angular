@@ -10,6 +10,7 @@ import { PostComponent } from './components/post/post.component';
 import { ModalDialogComponent } from './components/modal-dialog/modal-dialog.component';
 
 import { PostsService } from '../app/services/post.service';
+import { PostDetailComponent } from './components/post-detail/post-detail.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PostsService } from '../app/services/post.service';
     AppComponent,
     PostListComponent,
     PostComponent,
-    ModalDialogComponent
+    ModalDialogComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,

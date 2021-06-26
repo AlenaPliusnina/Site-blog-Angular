@@ -1,20 +1,19 @@
 <div class="add-post-wrapper">
-    <div class="btn-wrapper" *ngIf="!isModalDialogVisible">
-        <button class="btn-blue" [routerLink]="''">Назад</button>
+  <div class="btn-wrapper" *ngIf="!isModalDialogVisible">
+    <button class="btn-blue" [routerLink]="''">Назад</button>
+  </div>
+  <div class="form-wrapper"  *ngIf="!isModalDialogVisible">
+    <div class="title-wrapper">
+      <h4>Запись "{{ post.title }}"</h4>
     </div>
-    <div class="form-wrapper"  *ngIf="!isModalDialogVisible">
-        <div class="title-wrapper">
-            <h4>Запись "{{ post.title }}"</h4>
-        </div>
-        <form class="form-add-post">
-            <input class="title-input" type="text" id="title" 
-            placeholder="Title" [(ngModel)]="post.title" name="title" #title>
-            <textarea class="content-input" placeholder="Content" #content>{{ post.content }}</textarea>
-            <div class="form-btns">
-                <button class="btn-red" (click)="showDialog()" *ngIf="post.id !== undefined">Удалить</button>
-                <button class="btn-blue" (click)="savePost(post.id, title.value, content.value)">Сохранить</button>
-            </div>
-        </form>
-    </div>
-    <app-modal-dialog *ngIf="isModalDialogVisible" (isConfirmed)="closeModal(post.id, $event)"></app-modal-dialog> 
+    <form class="form-add-post">
+      <input class="title-input" type="text" id="title" placeholder="Title" [(ngModel)]=" post.title" name="title">
+      <textarea class="content-input" placeholder="Content" [(ngModel)]="post.content" name="content"></textarea>
+      <div class="form-btns">
+        <button type="button" class="btn-red" (click)="showDialog()" *ngIf="id">Удалить</button>
+        <button type="button" class="btn-blue" (click)="savePost(post)" [routerLink]="'/'">Сохранить</button>
+      </div>
+    </form>
+  </div>
+  <app-modal-dialog *ngIf="isModalDialogVisible" (isConfirmed)="closeModal(id, $event)"></app-modal-dialog> 
 </div>

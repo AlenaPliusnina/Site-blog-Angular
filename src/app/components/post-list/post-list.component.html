@@ -1,13 +1,16 @@
 <div class="title-wrapper">
-    <h1 class="title">Блог</h1>
-</div>
-<div class="btn-wrapper">
-    <button class="btn-blue" [routerLink]="'post'">+ Добавить</button>
+  <h1 class="title">Блог</h1>
 </div>
 <div class="posts">
-    <div *ngFor="let post of posts" class="post">
-        <h3>{{ post.title }}</h3>
-        <div class="content">{{ post.content }}</div>
-        <button class="btn-blue btn-go-to" (click)="redirect(post)">Перейти</button>
+  <div *ngFor="let post of posts" class="post">
+    <h3>{{ post.title }}</h3>
+    <div class="content">{{ post.content }}</div>
+    <div class="btn-go-wrapper">
+      <button class="btn-green btn-go-to" (click)="postEdit(post)">Редактировать</button>
+      <button class="btn-blue btn-go-to" (click)="postDetail(post)">О посте</button>
     </div>
+  </div>
+</div>
+<div class="btn-wrapper">
+  <button class="btn-blue" [routerLink]="'post'">+ Добавить</button>
 </div>

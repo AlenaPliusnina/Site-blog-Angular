@@ -1,0 +1,27 @@
+<h3 class="post-detail-title">О посте</h3>
+<div class="post-detail-wrapper">
+  <table class="post-detail-table">
+    <tr>
+      <td class="info-title">ID</td>
+      <td class="info">{{ post.id }}</td>
+    </tr>
+    <tr>
+      <td class="info-title">Title</td>
+      <td class="info">{{ post.title }}</td>
+    <tr>
+      <td class="info-title">Content</td>
+      <td class="info">{{ post.content }}</td>
+    </tr>
+    <tr>
+      <td class="info-title">Created</td>
+      <td class="info">{{ post.created }}</td>
+    </tr>
+    <tr>
+      <td class="info-title">Last change</td>
+      <td class="info">{{ post.lastChange }}</td>
+    </tr>
+  </table>
+</div>
+<div class="btn-back-wrapper">
+  <button class="btn-blue" [routerLink]="''">Назад</button>
+</div>

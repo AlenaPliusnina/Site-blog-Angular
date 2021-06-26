@@ -1,19 +1,30 @@
 import { Injectable } from '@angular/core';
 import { Post } from '../models/post';
-import { POSTS } from '../data/post-data';
 import { __exportStar } from 'tslib';
 
-@Injectable()
+@Injectable({
+  providedIn:'root'
+})
 export class PostsService {
 
-  constructor() { }
+  posts: Post[] = [];
 
-  getPosts(): Post[] {
-    return POSTS;
+  constructor() {}
+
+  addPost(newPost: Post) {
+    this.posts.push(newPost);
+  }
+
+  getPosts() {
+    return this.posts;
+  }
+
+  getPostInfo(id: number) {
+    return this.posts.find((post) => { return post.id == id });
   }
 
   deletePost(id: number): Post[] {
-    return POSTS.splice(id, 1);
+    return this.posts.splice(id, 1);
   }
 
 }

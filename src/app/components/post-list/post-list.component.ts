@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Post } from '../../models/post';
-import { PostsService } from '../../services/post.service'
+import { PostsService } from '../../services/post.service';
 
 @Component({
   selector: 'app-post-list',
@@ -10,24 +10,22 @@ import { PostsService } from '../../services/post.service'
 })
 export class PostListComponent implements OnInit {
 
-  posts: Post[];
+  posts: Post[]; 
 
   constructor(
     private router: Router,
     private postsService: PostsService
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.getPosts();  
-  }
-
-  getPosts(): void {
     this.posts = this.postsService.getPosts();
   }
 
-  redirect(post: any) {
-    this.router.navigate(['post', post.id], { 
-      state: { postData: post } 
-    });
+  postEdit(post: Post) {
+    this.router.navigate(['post', post.id]);
+  }
+
+  postDetail(post: Post) {
+    this.router.navigate(['post-detail', post.id]);
   }
 }

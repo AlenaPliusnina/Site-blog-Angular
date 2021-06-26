@@ -1,0 +1,32 @@
+.post-detail-title {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+
+.post-detail-wrapper {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.post-detail-table > tr > td {
+  padding: 10px 20px;
+  background-color: rgb(209, 209, 209);;
+  text-align: center;
+}
+
+.info-title {
+  width: 100px;
+}
+
+.info {
+  width: 255px;
+}
+
+.btn-back-wrapper {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+}

@@ -1,32 +1,32 @@
 .modal-dialog {
-    margin-top: 15vh ;
+  margin-top: 15vh ;
 }
 
 .btn-close-wrapper {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn-close-wrapper > button {
-    cursor: pointer;
-    border: none;
-    font-size: 1.2rem;
-    background-color: white;
-    padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  background-color: white;
+  padding: 10px;
 }
 
 .modal-text {
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .btn-del-wrapper {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .btn-del-wrapper :nth-child(1) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
